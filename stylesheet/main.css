@@ -145,6 +145,21 @@ ul {
     padding: 1rem;
 }
 
+.switcher {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s1);
+  }
+  
+  .switcher > * {
+    flex-grow: 1;
+    flex-basis: calc(( 30rem - 100%) * 999);
+  }
+  
+  .switcher > :nth-last-child(n+ 4),
+  .switcher > :nth-last-child(n+ 4) ~ * {
+    flex-basis: 100%;
+  }
 /* ELEMENT STYLING */
 
 /* SECTIONAL STYLING */
@@ -176,29 +191,11 @@ header>nav>ul>ul {
 }
 
 #learn {
-    display: flex;
-    gap: var(--s2);
-    flex-wrap: wrap;
     align-items: center;
 }
 
 .explore>article {
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: start;
-    gap: var(--s2);
-}
-
-.explore>article>* {
-    width: 100%;
-}
-
-#blog>article {
-    --measure: 30ch;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-items: space-between;
 }
 
 address {
