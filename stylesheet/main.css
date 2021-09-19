@@ -29,7 +29,7 @@ ol[role="list"] {
 
 /* Set core root defaults */
 html {
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth;
     scroll-padding-block-start: 2rem;
 }
 
@@ -96,6 +96,7 @@ textarea {
     /* Colours */
     --clr-black: #000;
     --clr-underline: #DE970B;
+    --clr-accent: #bcde0b;
 
     /* Modular Scales */
     --ratio: 1.61803398875;
@@ -118,17 +119,17 @@ textarea {
 
 /* ELEMENT STYLING */
 section:target h1{
-    text-decoration: underline 10px var(--clr-underline) dashed;   
+    text-decoration: underline 5px var(--clr-underline) dashed;   
 }
 
 h1 {
     line-height: 3rem;
     text-decoration: underline 3px var(--clr-underline) solid;
-    transition: underline 500ms ease-in-out; 
+    transition: text-decoration 500ms ease-in-out; 
 }
 
 h1:hover {
-    text-decoration: underline 3px var(--clr-underline) wavy;   
+    text-decoration: underline 3px var(--clr-accent) solid;
 }
 
 p,
@@ -150,20 +151,21 @@ a {
     text-decoration: none;
     color: #fff;
     font-weight: var(--fw-900);
-    transition: all 700ms ease-in;
+    transition: text-decoration 700ms ease-in-out;
 }
 
 a:hover {
-    text-decoration: underline 5px var(--clr-underline);
+    text-decoration: line-through 1.5px var(--clr-underline);
 }
 
 button {
+    display: inline-block;
     font-weight: var(--fw-900);
     background: #fff;
     outline: 2px solid var(--clr-black);
     padding: .65rem;
     box-shadow: 10px 10px 5px black;
-    transition: all 1000ms 20ms ease-in-out;
+    transition: background 500ms 20ms ease-in-out;
     max-width: 16rem;
 }
 
