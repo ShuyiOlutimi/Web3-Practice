@@ -302,8 +302,7 @@ address {
     justify-content: space-between;
 }
 
-address a,
-footer a {
+main a, footer a {
     color: var(--clr-black);
 }
 
