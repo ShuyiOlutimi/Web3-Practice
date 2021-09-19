@@ -155,7 +155,7 @@ a {
 }
 
 a:hover {
-    text-decoration: line-through 1.5px var(--clr-underline);
+    text-decoration: line-through 3px var(--clr-underline);
 }
 
 button {
