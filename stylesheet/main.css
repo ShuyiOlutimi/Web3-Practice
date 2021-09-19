@@ -165,8 +165,9 @@ button {
     outline: 2px solid var(--clr-black);
     padding: .65rem;
     box-shadow: 10px 10px 5px black;
-    transition: background 500ms 20ms ease-in-out;
+    transition: 100ms 20ms ease-in-out;
     max-width: 16rem;
+    transition-property: transform, box-shadow, background;
 }
 
 button:hover {
@@ -174,7 +175,7 @@ button:hover {
 }
 
 button:active {
-    box-shadow: 0px 0px 5px black;
+    box-shadow: -2px -2px 1px black;
     transform: translateX(8px) translateY(8px);
 }
 
