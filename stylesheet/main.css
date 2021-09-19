@@ -261,6 +261,7 @@ header>nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: var(--s1);
 }
 
 header>nav>ul {
